@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 15px;
+  font-family: Lexend Deca;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.container {
+  max-width: 600px;
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.single-col {
+  padding: 50px 30px;
+}
+.icon {
+  margin-bottom: 50px;
+}
+.title {
+  font-family: Big Shoulders Display;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: hsl(0, 0%, 95%);
+}
+.descrition {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.6;
+  font-size: 12px;
+  margin-bottom: 60px;
+}
+.more {
+  text-decoration: none;
+  color: hsl(0, 0%, 95%);
+  display: block;
+  padding: 15px 20px;
+  background-color: #fff;
+  border-radius: 25px;
+}
+.sedans .more {
+  color: hsl(31, 77%, 52%);
+}
+.suvs .more {
+  color: hsl(184, 100%, 22%);
+}
+.luxury .more {
+  color: hsl(179, 100%, 13%);
+}
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+.sedans:hover .more {
+  background-color: hsl(31, 77%, 52%);
+  color: #fff;
+  border: 1px solid #fff;
+}
+.suvs:hover .more {
+  background-color: hsl(184, 100%, 22%);
+  color: #fff;
+  border: 1px solid #fff;
+}
+.luxury:hover .more {
+  background-color: hsl(179, 100%, 13%);
+  color: #fff;
+  border: 1px solid #fff;
+}
+@media (max-width: 600px) {
+  .frame {
+    height: auto;
+    padding: 50px;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+  .more {
+    max-width: 150px;
+  }
+}
